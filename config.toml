@@ -1,0 +1,23 @@
+baseURL = "http://example.com/"
+languageCode = "en-us"
+title = "Curves Documentation"
+theme = "ace-documentation"
+publishdir = "build"
+
+[[menu.shortcuts]]
+name = "Demos"
+url = "http://curves.robertzmay.com/"
+weight = 8
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-npm'></i>"
+url = "https://www.npmjs.com/package/curves"
+weight = 9
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-github'></i>"
+url = "https://github.com/robertmay2003/curves"
+weight = 10
+
+[markup.goldmark.renderer]
+unsafe = true

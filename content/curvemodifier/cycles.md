@@ -1,0 +1,9 @@
+---
+title: "Cycles"
+date: 2020-09-02T17:21:15-04:00
+draft: true
+weight: 5
+---
+#
+
+Hey hey ur gonna learn about this modifier n the types it can apply to
