@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://robertzmay.com/curves-documentation/curve/">
+    <link rel="canonical" href="http://robertzmay.com/curves-documentation/curve/">
 
     <title>
         
@@ -13,10 +13,10 @@
     </title>
 
     
-    <link href="https://robertzmay.com/curves-documentation/css/fontawesome.min.css" rel="stylesheet">
+    <link href="http://robertzmay.com/curves-documentation/css/fontawesome.min.css" rel="stylesheet">
 
     
-    <link rel="stylesheet" href="https://robertzmay.com/curves-documentation/css/ace.min.css">
+    <link rel="stylesheet" href="http://robertzmay.com/curves-documentation/css/ace.min.css">
 
     
     
@@ -264,9 +264,9 @@
     <code>)</code>
 </p>
 </p>
-<p><code>keys</code>: The list of <a href="https://robertzmay.com/curves-documentation/keyframe/" title="`Keyframes`">Keyframe</a> used to define the curve.<br>
-<code>modifiers</code>: The list of <a href="https://robertzmay.com/curves-documentation/curvemodifier/" title="`CurveModifiers`">CurveModifier</a> that will be applied to the curve.<br>
-<code>endBehavior</code>: The <a href="https://robertzmay.com/curves-documentation/curve/endbehavior/" title="`EndBehavior`">EndBehavior</a> used to define the curve&rsquo;s behavior beyond its first and last keyframes.<br>
+<p><code>keys</code>: The list of <a href="http://robertzmay.com/curves-documentation/keyframe/" title="`Keyframes`">Keyframe</a> used to define the curve.<br>
+<code>modifiers</code>: The list of <a href="http://robertzmay.com/curves-documentation/curvemodifier/" title="`CurveModifiers`">CurveModifier</a> that will be applied to the curve.<br>
+<code>endBehavior</code>: The <a href="http://robertzmay.com/curves-documentation/curve/endbehavior/" title="`EndBehavior`">EndBehavior</a> used to define the curve&rsquo;s behavior beyond its first and last keyframes.<br>
 <code>smoothing</code>: The degree to which different easing functions are smoothly transitioned into each other between keyframes.\</p>
 <hr>
 <h2 id="properties">Properties</h2>
@@ -279,7 +279,7 @@
 <h4 id="smoothing"><code>smoothing</code></h4>
 <p>The degree to which different easing functions are smoothly transitioned into each other between keyframes. This value is initally set in the constructor but can be modified at any time.</p>
 <h4 id="endbehavior"><code>endBehavior</code></h4>
-<p>The <a href="https://robertzmay.com/curves-documentation/curve/endbehavior/" title="`EndBehavior`">EndBehavior</a> used to define the curve&rsquo;s behavior beyond its first and last keyframes. This value is initally set in the constructor but can be modified at any time.</p>
+<p>The <a href="http://robertzmay.com/curves-documentation/curve/endbehavior/" title="`EndBehavior`">EndBehavior</a> used to define the curve&rsquo;s behavior beyond its first and last keyframes. This value is initally set in the constructor but can be modified at any time.</p>
 <hr>
 <h2 id="evaluating-the-curve">Evaluating the curve</h2>
 <p class="lead">
@@ -340,7 +340,7 @@
 <h2 id="adding--removing-keyframes">Adding &amp; Removing Keyframes</h2>
 <p>There are multiple methods available for adding and removing keyframes from a curve. There are also some protocols that must be observed if you choose to manually add or remove keyframes.</p>
 <h3 id="curvekeys">Curve.keys</h3>
-<p>The <code>keys</code> property of a <code>Curve</code> object is an array that stores the keyframes of the curve. Each keyframe must extend the <a href="https://robertzmay.com/curves-documentation/keyframe/" title="`Keyframe`">Keyframe</a> class, with the same generic type argument as the <code>Curve</code>. For example, a <code>Curve&lt;number&gt;</code> must have keyframes that extend <code>Keyframe&lt;number&gt;</code>.</p>
+<p>The <code>keys</code> property of a <code>Curve</code> object is an array that stores the keyframes of the curve. Each keyframe must extend the <a href="http://robertzmay.com/curves-documentation/keyframe/" title="`Keyframe`">Keyframe</a> class, with the same generic type argument as the <code>Curve</code>. For example, a <code>Curve&lt;number&gt;</code> must have keyframes that extend <code>Keyframe&lt;number&gt;</code>.</p>
 
 
 
@@ -391,7 +391,7 @@
     <div class="wrap border border-left-0 rounded">
         
         <div class="card-body pt-1">
-            If you modify the keyframe list directly rather than using the <code>addKeyframe</code> and <code>removeKeyframe</code> methods, <a href="https://robertzmay.com/curves-documentation/curve/#curveupdate" title="`update`">Update</a> must be called before the next <code>evaluate</code> for the curve to function properly. The same is true if any of the keyframes stored in the array are directly modified.
+            If you modify the keyframe list directly rather than using the <code>addKeyframe</code> and <code>removeKeyframe</code> methods, <a href="http://robertzmay.com/curves-documentation/curve/#curveupdate" title="`update`">Update</a> must be called before the next <code>evaluate</code> for the curve to function properly. The same is true if any of the keyframes stored in the array are directly modified.
         </div>
     </div>
 </div>
@@ -608,7 +608,7 @@
 <h2 id="managing-modifiers">Managing Modifiers</h2>
 <p>Modifiers are used to apply transformations and effects to a curve after it is evaluated. The modifiers are applied in the order of the list that stores them.</p>
 <h3 id="modifiers">modifiers</h3>
-<p>The <code>modifiers</code> property of a <code>Curve</code> object is an array that stores the modifiers of the curve. Each modifier must extend the <a href="https://robertzmay.com/curves-documentation/curvemodifier/" title="`CurveModifier`">CurveModifier</a> class, with the same generic type argument as the <code>Curve</code>. For example, a <code>Curve&lt;number&gt;</code> must have modifiers that extend <code>CurveModifier&lt;number&gt;</code>.</p>
+<p>The <code>modifiers</code> property of a <code>Curve</code> object is an array that stores the modifiers of the curve. Each modifier must extend the <a href="http://robertzmay.com/curves-documentation/curvemodifier/" title="`CurveModifier`">CurveModifier</a> class, with the same generic type argument as the <code>Curve</code>. For example, a <code>Curve&lt;number&gt;</code> must have modifiers that extend <code>CurveModifier&lt;number&gt;</code>.</p>
 
 
 
@@ -659,7 +659,7 @@
     <div class="wrap border border-left-0 rounded">
         
         <div class="card-body pt-1">
-            If you modify the modifier list directly rather than using the <code>addModifier</code>, <a href="https://robertzmay.com/curves-documentation/curve/#curveupdate" title="`update`">Update</a> must be called before the next <code>evaluate</code> for the curve to function properly. The same is true if any of the modifiers stored in the array are directly modified.
+            If you modify the modifier list directly rather than using the <code>addModifier</code>, <a href="http://robertzmay.com/curves-documentation/curve/#curveupdate" title="`update`">Update</a> must be called before the next <code>evaluate</code> for the curve to function properly. The same is true if any of the modifiers stored in the array are directly modified.
         </div>
     </div>
 </div>
@@ -806,10 +806,10 @@
             </div> 
 
         </div> 
-<script src="https://robertzmay.com/curves-documentation/lib/jquery.min.js"></script> 
-<script src="https://robertzmay.com/curves-documentation/lib/popper.min.js"></script> 
+<script src="http://robertzmay.com/curves-documentation/lib/jquery.min.js"></script> 
+<script src="http://robertzmay.com/curves-documentation/lib/popper.min.js"></script> 
 
-<script src="https://robertzmay.com/curves-documentation/js/bootstrap.min.js"></script> 
+<script src="http://robertzmay.com/curves-documentation/js/bootstrap.min.js"></script> 
 
 
 <script type="text/javascript" src="/curves-documentation/plugins/lunr.min.js"></script>
@@ -817,7 +817,7 @@
 <link href="/curves-documentation/plugins/auto-complete.css" rel="stylesheet">
 <script type="text/javascript">
   
-      var baseurl = "https:\/\/robertzmay.com\/curves-documentation\/";
+      var baseurl = "http:\/\/robertzmay.com\/curves-documentation\/";
   
 </script>
 <script type="text/javascript" src="/curves-documentation/plugins/search.js"></script>
