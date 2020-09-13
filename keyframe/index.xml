@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Keyframe on Curves Documentation</title>
+    <link>https://robertzmay.com/curves-documentation/keyframe/</link>
+    <description>Recent content in Keyframe on Curves Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Sep 2020 17:21:15 -0400</lastBuildDate>
+    
+	<atom:link href="https://robertzmay.com/curves-documentation/keyframe/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Typed Keyframes</title>
+      <link>https://robertzmay.com/curves-documentation/keyframe/typedkeyframes/</link>
+      <pubDate>Sun, 06 Sep 2020 04:45:10 -0400</pubDate>
+      
+      <guid>https://robertzmay.com/curves-documentation/keyframe/typedkeyframes/</guid>
+      <description>There are a number of built in subclasses of the Keyframe class for primitive types and data structures.
+ Number Keyframe new NumberKeyframe (time: number, value: number, inEasing: Easing = Easing.cubic, outEasing: Easing | undefined = undefined) The NumberKeyframe class interpolates between number values.
+ String Keyframe new StringKeyframe (time: number, value: string, inEasing: Easing = Easing.cubic, outEasing: Easing | undefined = undefined) The StringKeyframe class interpolates between string values.</description>
+    </item>
+    
+  </channel>
+</rss>

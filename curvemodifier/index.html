@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="https://robertzmay.com/curves-documentation/curvemodifier/">
+
+    <title>
+        
+        CurveModifier | Curves Documentation
+        
+    </title>
+
+    
+    <link href="https://robertzmay.com/curves-documentation/css/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://robertzmay.com/curves-documentation/css/ace.min.css">
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/curves-documentation">
+                Curves Documentation
+            </a>
+        </div>
+        
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarMainCollapse" aria-controls="navbarMainCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMainCollapse">
+              <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://curves.robertzmay.com/" >
+                                  Demos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.npmjs.com/package/curves" >
+                                  <i class='fab fa-npm'></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/robertmay2003/curves" >
+                                  <i class='fab fa-github'></i>
+                                </a>
+                            </li>
+              </ul>
+            </div>
+    </div>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/curves-documentation/curve/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/curve/"><h6>Curve</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curves-documentation/curve/builders/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curve/builders/" class="nav-link p-0">
+                    Builders
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curve/endbehavior/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curve/endbehavior/" class="nav-link p-0">
+                    End Behavior
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/curves-documentation/keyframe/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/keyframe/"><h6>Keyframe</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curves-documentation/keyframe/typedkeyframes/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/keyframe/typedkeyframes/" class="nav-link p-0">
+                    Typed Keyframes
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/curves-documentation/curvemodifier/" class="nav-item my-1 parent active haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/curvemodifier/"><h6>CurveModifier</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curves-documentation/curvemodifier/noise/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/noise/" class="nav-link p-0">
+                    Noise
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curvemodifier/clamp/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/clamp/" class="nav-link p-0">
+                    Clamp
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curvemodifier/sine/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/sine/" class="nav-link p-0">
+                    Sine
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curvemodifier/step/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/step/" class="nav-link p-0">
+                    Step
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curvemodifier/cycles/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/cycles/" class="nav-link p-0">
+                    Cycles
+                </a>
+        </li>
+    <li data-nav-id="/curves-documentation/curvemodifier/string/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/curvemodifier/string/"><h6>String Modifiers</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curves-documentation/curvemodifier/string/exclude/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/string/exclude/" class="nav-link p-0">
+                    Exclude
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curvemodifier/string/ranges/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/string/ranges/" class="nav-link p-0">
+                    Ranges
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/curves-documentation/curvemodifier/object/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/curvemodifier/object/"><h6>Object Modifiers</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curves-documentation/curvemodifier/object/aggregate/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/object/aggregate/" class="nav-link p-0">
+                    Aggregate
+                </a>
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/curves-documentation/interfaces/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/interfaces/"><h6>Interfaces</h6></a>
+    </li>
+    <li data-nav-id="/curves-documentation/color_helper/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/color_helper/"><h6>Color Helper</h6></a>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#modifier-class">Modifier Class</a>
+      <ul>
+        <li><a href="#constructor">Constructor</a></li>
+      </ul>
+    </li>
+    <li><a href="#implementation">Implementation</a>
+      <ul>
+        <li><a href="#modify">Modify</a></li>
+        <li><a href="#configure">Configure</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#evaluate">Evaluate</a></li>
+        <li><a href="#modify-external">Modify External</a></li>
+      </ul>
+    </li>
+    <li><a href="#accessing-modifiers">Accessing Modifiers</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<h1>CurveModifier</h1>
+
+<h1 id="heading"></h1>
+<p>Curve modifiers are used to apply modifications to the values returned by evaluating a curve. They function similarly to Blender&rsquo;s <a href="https://docs.blender.org/manual/en/latest/editors/graph_editor/fcurves/modifiers.html">F-Curve Modifiers</a>.</p>
+<h2 id="modifier-class">Modifier Class</h2>
+<p>All modifiers must extend the abstract generic <code>CurveModifier&lt;T&gt;</code> class. The type argument <code>T</code> of the <code>CurveModifier</code> class indicates the type returned by applying the modifier to a curve.\</p>
+<p>A modifier can only be applied to a curve that returns the same type as the modifier. For example, an implementation of <code>CurveModifier&lt;number&gt;</code> can only be applied to an implementation of <code>Curve&lt;number&gt;</code>.</p>
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-success rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-header border-0 bg-white pl-3 text-success">
+            <h3>Flexibility</h3>
+        </div>
+        
+        <div class="card-body pt-1">
+            The <code>CurveModifier</code> class is simple to implement. Due to its abstract and generic nature, you can easily define a subclass of the <code>CurveModifier</code> class that implements any chosen modification for any chosen type. Curves that return values of custom types can be modified, and any modification can be implemented.
+        </div>
+    </div>
+</div>
+
+<h3 id="constructor">Constructor</h3>
+<p><p class="lead">
+    <code>new</code> CurveModifier&lt;<code>T</code>&gt; <code>(</code>
+</p>
+
+<p class="lead">
+    <code>    rangeStart: number = Number.MIN_VALUE,</code>
+</p>
+
+<p class="lead">
+    <code>    rangeEnd: number = Number.MAX_VALUE,</code>
+</p>
+
+<p class="lead">
+    <code>)</code>
+</p>
+</p>
+<p><code>rangeStart</code>: The time at which the modifier begins to modify the curve.<br>
+<code>rangeEnd</code>: The time at which the modifier no longer modifies the curve.\</p>
+<p>The <code>rangeStart</code> and <code>rangeEnd</code> parameters are relative to the duration of the curve, meaning that a value of <code>0</code> references the beginning of the curve and a value of <code>1</code> references the end. However, as a curve can be evaluated beyond its start and end times, the <code>rangeStart</code> and <code>rangeEnd</code> can extend beyond the ends of the curve as well. By default, they are the minimum and maximum number values respectively, meaning that the modifier will be active at any given evaluation time.</p>
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-warning rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-body pt-1">
+            The <code>CurveModifier&lt;T&gt;</code> class is abstract, so its constructor cannot be used outside of the constructor of a subclass as a <code>super</code> call. Objects of the abstract <code>CurveModifier&lt;T&gt;</code> class cannot be instantiated.
+        </div>
+    </div>
+</div>
+
+<h2 id="implementation">Implementation</h2>
+<p>The <code>CurveModifier&lt;T&gt;</code> class only has one abstract method that must be implemented, and one optional method that can be overwritten.</p>
+<h3 id="modify">Modify</h3>
+<p class="lead">
+    <code>protected abstract</code> _modify <code>(value: T, time: number): T</code>
+</p>
+
+<p><code>value</code>: The value returned by evaluating the curve.<br>
+<code>time</code>: The time at which the curve was evaluated.</p>
+<p>The <code>_modify</code> method is called on each evaluation. It contains the logic that applies a modification to a curve.</p>
+
+
+
+
+
+
+    
+    
+
+
+
+
+<div class="position-relative">
+    <div class="position-absolute" style="right:0;">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_2cdd5dec57">
+        Copy
+        </button>
+    </div>
+    <div id="clipboard_2cdd5dec57">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript">
+<span style="color:#75715e">// Implementation of the _modify method in the `Clamp` modifier for numbers
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">protected</span> <span style="color:#a6e22e">_modify</span>(<span style="color:#a6e22e">value</span>: <span style="color:#66d9ef">number</span>, <span style="color:#a6e22e">time</span>: <span style="color:#66d9ef">number</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">number</span> {
+    <span style="color:#75715e">// this.min and this.max refer to values defined in the Clamp modifier&#39;s constructor
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> Math.<span style="color:#a6e22e">min</span>(Math.<span style="color:#a6e22e">max</span>(<span style="color:#a6e22e">value</span>, <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">min</span>), <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">max</span>);
+}
+
+</code></pre></div>
+    </div>
+</div>
+
+
+
+
+<h3 id="configure">Configure</h3>
+<p class="lead">
+    configure <code>(curve: Curve&lt;T&gt;)</code>
+</p>
+
+<p>Some modifiers require configuration based on the curve they modify. The <code>configure</code> method is implemented as an empty method; overwriting it is optional.
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-info rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-body pt-1">
+            The <code>configure</code> method is only called when the <code>update</code> method of the curve to which the keyframe belongs is called. If the modifier applies to multiple curves and <code>configure</code> is not called before curve evaluation, unexpected consequences may occur.
+        </div>
+    </div>
+</div>
+</p>
+<h2 id="usage">Usage</h2>
+<p>An implemented subclass of <code>CurveModifier&lt;T&gt;</code> is used by adding the modifier to a curve, via either the <a href="https://robertzmay.com/curves-documentation/curve/#addmodifier" title="`Curve.addModifier`">Curve.addModifier</a> method or directly accessing the curve&rsquo;s <a href="https://robertzmay.com/curves-documentation/curve/#modifiers" title="`modifiers`">modifiers</a> list. If added to a curve, it will be applied automatically using the <code>evaluate</code> method. However, it can also be used independently of a curve with the <code>modifyExternal</code> method.</p>
+<h3 id="evaluate">Evaluate</h3>
+<p class="lead">
+    evaluate <code>(curve: Curve&lt;T&gt;, value: T, time: number): T</code>
+</p>
+
+<p>The <code>evaluate</code> method determines whether or not the modifier should be applied based on the modifier&rsquo;s <code>rangeStart</code> and <code>rangeEnd</code> values. If the <code>time</code> falls within the range (relative to the duration of the curve), the modifier is applied and the modified value is returned. Otherwise, the unmodified value is returned.</p>
+<h3 id="modify-external">Modify External</h3>
+<p class="lead">
+    modifyExternal <code>(value: T, time: number): T</code>
+</p>
+
+<p>The <code>modifyExternal</code> method applies the modifier to the value passed in, regardless of the modifier&rsquo;s <code>rangeStart</code> and <code>rangeEnd</code> values.</p>
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-warning rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-body pt-1">
+            For modifiers that require configuration, the modification is dependent on the curve being modified, and thus the <code>modifyExternal</code> method, which applies the modification with no specified curve, could yield unexpected results.
+        </div>
+    </div>
+</div>
+
+<h2 id="accessing-modifiers">Accessing Modifiers</h2>
+<p>Modifiers are organized by the type to which they apply. To access a modifier, use the following format:<br>
+<code>Modifiers.</code>[<code>Type</code>]<code>.</code>[<code>Modifier Name</code>]</p>
+
+
+
+
+
+
+    
+    
+
+
+
+
+<div class="position-relative">
+    <div class="position-absolute" style="right:0;">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_d25d8b8156">
+        Copy
+        </button>
+    </div>
+    <div id="clipboard_d25d8b8156">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript">
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Modifiers</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;curves&#39;</span>; <span style="color:#75715e">// Import Modifiers
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numberClamp</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Modifiers</span>.Number.<span style="color:#a6e22e">Clamp</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// Create a new number clamp modifier
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">rgbNoise</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Modifiers</span>.<span style="color:#a6e22e">RGB</span>.<span style="color:#a6e22e">Noise</span>(); <span style="color:#75715e">// Create a new color noise modifier
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// Use the two previously defined modifiers to define an object aggregate modifier
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">objectAggregate</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Modifiers</span>.Object.<span style="color:#a6e22e">Aggregate</span>({
+    <span style="color:#66d9ef">number</span><span style="color:#f92672">:</span> [<span style="color:#a6e22e">numberClamp</span>],
+    <span style="color:#a6e22e">color</span><span style="color:#f92672">:</span> [<span style="color:#a6e22e">rgbNoise</span>],
+}); 
+
+</code></pre></div>
+    </div>
+</div>
+
+
+
+
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/curves-documentation/keyframe/typedkeyframes/" title="Typed Keyframes"><i class="fas fa-chevron-left p-1"></i>Typed Keyframes</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/curves-documentation/curvemodifier/noise/" title="Noise">Noise<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://robertzmay.com/curves-documentation/lib/jquery.min.js"></script> 
+<script src="https://robertzmay.com/curves-documentation/lib/popper.min.js"></script> 
+
+<script src="https://robertzmay.com/curves-documentation/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/curves-documentation/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/curves-documentation/plugins/auto-complete.js"></script>
+<link href="/curves-documentation/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/robertzmay.com\/curves-documentation\/";
+  
+</script>
+<script type="text/javascript" src="/curves-documentation/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="/curves-documentation/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

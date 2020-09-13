@@ -2,4 +2,107 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/curve/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/keyframe/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/curvemodifier/noise/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/curvemodifier/clamp/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/curvemodifier/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/curvemodifier/sine/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/interfaces/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/curvemodifier/step/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/curvemodifier/cycles/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/color_helper/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/curvemodifier/string/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/curvemodifier/object/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/keyframe/typedkeyframes/</loc>
+    <lastmod>2020-09-06T04:45:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/curvemodifier/object/aggregate/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/curve/builders/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/curve/endbehavior/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/curvemodifier/string/exclude/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/curvemodifier/string/ranges/</loc>
+    <lastmod>2020-09-02T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://robertzmay.com/curves-documentation/tags/</loc>
+  </url>
+  
 </urlset>
