@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CurveModifier on Curves Documentation</title>
+    <link>http://example.com/curvemodifier/</link>
+    <description>Recent content in CurveModifier on Curves Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Sep 2020 17:21:15 -0400</lastBuildDate>
+    
+	<atom:link href="http://example.com/curvemodifier/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Noise</title>
+      <link>http://example.com/curvemodifier/noise/</link>
+      <pubDate>Wed, 02 Sep 2020 17:21:15 -0400</pubDate>
+      
+      <guid>http://example.com/curvemodifier/noise/</guid>
+      <description>The Noise modifier randomly modifies the output of the curve by adding simplex noise.
+Types  Number List RGBColor HSVColor Vector3 Boolean  Constructor new Noise (  amplitude: number,  frequency: number,  seed: number = 0,  rangeStart: number | undefined = undefined,  rangeEnd: number | undefined = undefined, ) amplitude: The amplitude of the simplex noise.
+frequency: The frequency of the simplex noise.
+seed: The seed used to generate the simplex noise.</description>
+    </item>
+    
+    <item>
+      <title>Clamp</title>
+      <link>http://example.com/curvemodifier/clamp/</link>
+      <pubDate>Wed, 02 Sep 2020 17:21:15 -0400</pubDate>
+      
+      <guid>http://example.com/curvemodifier/clamp/</guid>
+      <description>The Clamp modifier clamps the evaluated value of the curve between a minimum and maximum value.
+Types  Number List RGBColor HSVColor Vector3  Constructor new Clamp (  min:[Type],  max:[Type],  rangeStart: number | undefined = undefined,  rangeEnd: number | undefined = undefined, ) min: The minimum return value of the modifier.
+max: The maximum return value of the modifier.
+rangeStart: The time at which the modifier begins to modify the curve.</description>
+    </item>
+    
+    <item>
+      <title>Sine</title>
+      <link>http://example.com/curvemodifier/sine/</link>
+      <pubDate>Wed, 02 Sep 2020 17:21:15 -0400</pubDate>
+      
+      <guid>http://example.com/curvemodifier/sine/</guid>
+      <description>The Sine modifier uses a sine wave to modify the output of the curve.
+Types  Number List RGBColor HSVColor Vector3 Boolean  Constructor new Sine (  blendMode: SineModifierBlendMode,  amplitude: number,  wavelength: number,  phaseOffset: number,  rangeStart: number | undefined = undefined,  rangeEnd: number | undefined = undefined, ) blendMode: The manner in which the sine wave will modify the curve.
+amplitude: The amplitude of the sine wave.</description>
+    </item>
+    
+    <item>
+      <title>Step</title>
+      <link>http://example.com/curvemodifier/step/</link>
+      <pubDate>Wed, 02 Sep 2020 17:21:15 -0400</pubDate>
+      
+      <guid>http://example.com/curvemodifier/step/</guid>
+      <description>The Step modifier transforms the curve into a step function.
+Types  Number List RGBColor HSVColor Vector3  Constructor new Step (  stepLength: number,  rangeStart: number | undefined = undefined,  rangeEnd: number | undefined = undefined, ) stepLength: The vertical distance between each step.
+rangeStart: The time at which the modifier begins to modify the curve.
+rangeEnd: The time at which the modifier no longer modifies the curve.</description>
+    </item>
+    
+    <item>
+      <title>Cycles</title>
+      <link>http://example.com/curvemodifier/cycles/</link>
+      <pubDate>Wed, 02 Sep 2020 17:21:15 -0400</pubDate>
+      
+      <guid>http://example.com/curvemodifier/cycles/</guid>
+      <description>The Cycles modifier samples a defined portion of the curve and loops it throughout the modifier&amp;rsquo;s range.
+Types  Any  Constructor new Cycles&amp;lt;T&amp;gt; (  startTime: number,  endTime: number,  rangeStart: number | undefined = undefined,  rangeEnd: number | undefined = undefined, ) startTime: The beginning time of the range from which the curve will be sampled for the loop.
+endTime: The ending time of the range from which the curve will be sampled for the loop.</description>
+    </item>
+    
+  </channel>
+</rss>

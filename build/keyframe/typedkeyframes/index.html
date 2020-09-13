@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="http://example.com/keyframe/typedkeyframes/">
+
+    <title>
+        
+        Typed Keyframes | Curves Documentation
+        
+    </title>
+
+    
+    <link href="http://example.com/css/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="http://example.com/css/ace.min.css">
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/">
+                Curves Documentation
+            </a>
+        </div>
+        
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarMainCollapse" aria-controls="navbarMainCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMainCollapse">
+              <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://curves.robertzmay.com/" >
+                                  Demos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.npmjs.com/package/curves" >
+                                  <i class='fab fa-npm'></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/robertmay2003/curves" >
+                                  <i class='fab fa-github'></i>
+                                </a>
+                            </li>
+              </ul>
+            </div>
+    </div>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/curve/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curve/"><h6>Curve</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curve/builders/" class="nav-item my-1">
+                
+                 <a href="/curve/builders/" class="nav-link p-0">
+                    Builders
+                </a>
+        </li>
+        <li data-nav-id="/curve/endbehavior/" class="nav-item my-1">
+                
+                 <a href="/curve/endbehavior/" class="nav-link p-0">
+                    End Behavior
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/keyframe/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/keyframe/"><h6>Keyframe</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/keyframe/typedkeyframes/" class="nav-item my-1 active">
+                
+                 <a href="/keyframe/typedkeyframes/" class="nav-link p-0">
+                    Typed Keyframes
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/curvemodifier/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curvemodifier/"><h6>CurveModifier</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curvemodifier/noise/" class="nav-item my-1">
+                
+                 <a href="/curvemodifier/noise/" class="nav-link p-0">
+                    Noise
+                </a>
+        </li>
+        <li data-nav-id="/curvemodifier/clamp/" class="nav-item my-1">
+                
+                 <a href="/curvemodifier/clamp/" class="nav-link p-0">
+                    Clamp
+                </a>
+        </li>
+        <li data-nav-id="/curvemodifier/sine/" class="nav-item my-1">
+                
+                 <a href="/curvemodifier/sine/" class="nav-link p-0">
+                    Sine
+                </a>
+        </li>
+        <li data-nav-id="/curvemodifier/step/" class="nav-item my-1">
+                
+                 <a href="/curvemodifier/step/" class="nav-link p-0">
+                    Step
+                </a>
+        </li>
+        <li data-nav-id="/curvemodifier/cycles/" class="nav-item my-1">
+                
+                 <a href="/curvemodifier/cycles/" class="nav-link p-0">
+                    Cycles
+                </a>
+        </li>
+    <li data-nav-id="/curvemodifier/string/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curvemodifier/string/"><h6>String Modifiers</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curvemodifier/string/exclude/" class="nav-item my-1">
+                
+                 <a href="/curvemodifier/string/exclude/" class="nav-link p-0">
+                    Exclude
+                </a>
+        </li>
+        <li data-nav-id="/curvemodifier/string/ranges/" class="nav-item my-1">
+                
+                 <a href="/curvemodifier/string/ranges/" class="nav-link p-0">
+                    Ranges
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/curvemodifier/object/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curvemodifier/object/"><h6>Object Modifiers</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curvemodifier/object/aggregate/" class="nav-item my-1">
+                
+                 <a href="/curvemodifier/object/aggregate/" class="nav-link p-0">
+                    Aggregate
+                </a>
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/interfaces/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/interfaces/"><h6>Interfaces</h6></a>
+    </li>
+    <li data-nav-id="/color_helper/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/color_helper/"><h6>Color Helper</h6></a>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#number-keyframe">Number Keyframe</a></li>
+        <li><a href="#string-keyframe">String Keyframe</a></li>
+        <li><a href="#boolean-keyframe">Boolean Keyframe</a></li>
+        <li><a href="#rgb-color-keyframe">RGB Color Keyframe</a></li>
+        <li><a href="#hsv-color-keyframe">HSV Color Keyframe</a></li>
+        <li><a href="#vector3-keyframe">Vector3 Keyframe</a></li>
+        <li><a href="#list-keyframe">List Keyframe</a></li>
+        <li><a href="#object-keyframe">Object Keyframe</a></li>
+      </ul>
+    </li>
+    <li><a href="#bezier-curves">Bezier Curves</a>
+      <ul>
+        <li><a href="#bezier-keyframe">Bezier Keyframe</a></li>
+        <li><a href="#bezier-handles">Bezier Handles</a></li>
+        <li><a href="#automatic-handles">Automatic Handles</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<h1>Typed Keyframes</h1>
+
+<h1 id="heading"></h1>
+<p>There are a number of built in subclasses of the <a href="http://example.com/keyframe/" title="`Keyframe&lt;T&gt;`">Keyframe</a> class for primitive types and data structures.</p>
+<hr>
+<h3 id="number-keyframe">Number Keyframe</h3>
+<p><p class="lead">
+    <code>new</code> NumberKeyframe <code>(time: number, value: number, inEasing: Easing = Easing.cubic, outEasing: Easing | undefined = undefined)</code>
+</p>
+
+The <code>NumberKeyframe</code> class interpolates between number values.</p>
+<hr>
+<h3 id="string-keyframe">String Keyframe</h3>
+<p><p class="lead">
+    <code>new</code> StringKeyframe <code>(time: number, value: string, inEasing: Easing = Easing.cubic, outEasing: Easing | undefined = undefined)</code>
+</p>
+
+The <code>StringKeyframe</code> class interpolates between string values.</p>
+<hr>
+<h3 id="boolean-keyframe">Boolean Keyframe</h3>
+<p><p class="lead">
+    <code>new</code> BooleanKeyframe <code>(time: number, value: boolean, inEasing: Easing = Easing.cubic, outEasing: Easing | undefined = undefined, solveInterpolation = false, truthThreshold = 0.5)</code>
+</p>
+
+The <code>BooleanKeyframe</code> class interpolates between boolean values. There are two ways it can interpolate between boolean values: through interpolation with a truth threshold, or through simply returning the boolean value of the current keyframe.<br>
+If <code>solveInterpolation</code> is true, the resulting value of the <code>interpolate</code> method will be solved by interpolating between the values of the current and next keyframe, where <code>true = 1</code> and <code>false = 0</code>. Whether the resulting value is <code>true</code> or <code>false</code> is determined by the condition <code>value &gt; truthThreshold</code>.</p>
+<hr>
+<h3 id="rgb-color-keyframe">RGB Color Keyframe</h3>
+<p><p class="lead">
+    <code>new</code> RGBColorKeyframe <code>(time: number, value: RGBColor, inEasing: Easing = Easing.cubic, outEasing: Easing | undefined = undefined)</code>
+</p>
+
+The <code>RGBColorKeyframe</code> class interpolates between <a href="http://example.com/interfaces/#RGBColor" title="`RGBColor`">RGBColor</a> values.<br>
+The <code>RGBColorKeyframe</code> class contains a single custom method.</p>
+<h4 id="to-float-keyframe">To Float Keyframe</h4>
+<p><p class="lead">
+    toFloatKeyframe <code>(): NumberKeyframe[]</code>
+</p>
+
+The <code>toFloatKeyframe</code> method converts the <code>RGBColorKeyframe</code> to a list of <code>NumberKeyframe</code> values. The first value of the list corresponds to the <code>r</code> value, the second to the <code>g</code> value, and the third to the <code>b</code> value.</p>
+<hr>
+<h3 id="hsv-color-keyframe">HSV Color Keyframe</h3>
+<p><p class="lead">
+    <code>new</code> HSVColorKeyframe <code>(time: number, value: HSVColor, inEasing: Easing = Easing.cubic, outEasing: Easing | undefined = undefined)</code>
+</p>
+
+The <code>HSVColorKeyframe</code> class interpolates between <a href="http://example.com/interfaces/#HSVColor" title="`HSVColor`">HSVColor</a> values.<br>
+The <code>HSVColorKeyframe</code> class contains a single custom method.</p>
+<h4 id="to-float-keyframe-1">To Float Keyframe</h4>
+<p><p class="lead">
+    toFloatKeyframe <code>(): NumberKeyframe[]</code>
+</p>
+
+The <code>toFloatKeyframe</code> method converts the <code>HSVColorKeyframe</code> to a list of <code>NumberKeyframe</code> values. The first value of the list corresponds to the <code>h</code> value, the second to the <code>s</code> value, and the third to the <code>v</code> value.</p>
+<hr>
+<h3 id="vector3-keyframe">Vector3 Keyframe</h3>
+<p><p class="lead">
+    <code>new</code> Vector3Keyframe <code>(time: number, value: Vector3, inEasing: Easing = Easing.cubic, outEasing: Easing | undefined = undefined)</code>
+</p>
+
+The <code>Vector3Keyframe</code> class interpolates between <a href="http://example.com/interfaces/#Vector3" title="`Vector3`">Vector3</a> values.<br>
+The <code>Vector3Keyframe</code> class contains a single custom method.</p>
+<h4 id="to-float-keyframe-2">To Float Keyframe</h4>
+<p><p class="lead">
+    toFloatKeyframe <code>(): NumberKeyframe[]</code>
+</p>
+
+The <code>toFloatKeyframe</code> method converts the <code>Vector3Keyframe</code> to a list of <code>NumberKeyframe</code> values. The first value of the list corresponds to the <code>x</code> value, the second to the <code>y</code> value, and the third to the <code>z</code> value.</p>
+<hr>
+<h3 id="list-keyframe">List Keyframe</h3>
+<p><p class="lead">
+    <code>new</code> ListKeyframe <code>(time: number, value: number[], inEasing: Easing = Easing.cubic, outEasing: Easing | undefined = undefined, truncate = false)</code>
+</p>
+
+The <code>NumberKeyframe</code> class interpolates between arrays of numbers.
+The <code>truncate</code> argument tells the keyframe whether or not to truncate the excess values when interpolating with a list with greater number of values than the other.<br>
+If <code>truncate = false</code>, the excess values will interpolate to <code>0</code>.<br>
+If <code>truncate = true</code>, the excess values will not be returned by interpolation.\</p>
+<p>The <code>ListKeyframe</code> class contains a single custom method.</p>
+<h4 id="to-float-keyframes">To Float Keyframes</h4>
+<p><p class="lead">
+    toFloatKeyframes <code>(): NumberKeyframe[]</code>
+</p>
+
+The <code>toFloatKeyframe</code> method converts the <code>ListKeyframe</code> to a list of <code>NumberKeyframe</code> values. The list contains one <code>NumberKeyframe</code> for each number in the list.</p>
+<hr>
+<h3 id="object-keyframe">Object Keyframe</h3>
+<p><p class="lead">
+    <code>new</code> ObjectKeyframe <code>(time: number, value: object, inEasing: Easing = Easing.cubic, outEasing: Easing | undefined = undefined)</code>
+</p>
+
+The <code>ObjectKeyframe</code> can interpolate between any two JSON objects. It constructs keyframes for each value in the object, including an <code>ObjectKeyframe</code> for each nested object. It can also detect CSS color strings and interpolate between them as colors.</p>
+<hr>
+<h2 id="bezier-curves">Bezier Curves</h2>
+<p>There is also a <code>Keyframe</code> type that supports cubic Bezier interpolation.</p>
+<h3 id="bezier-keyframe">Bezier Keyframe</h3>
+<p><p class="lead">
+    <code>new</code> BezierKeyframe <code>(</code>
+</p>
+
+<p class="lead">
+    <code>    time: number,</code>
+</p>
+
+<p class="lead">
+    <code>    value: number,</code>
+</p>
+
+<p class="lead">
+    <code>    inHandle: BezierHandle | undefined = undefined,</code>
+</p>
+
+<p class="lead">
+    <code>    outHandle: BezierHandle | undefined = new BezierHandle(Math.PI),</code>
+</p>
+
+<p class="lead">
+    <code>    defaultMagnitude = 1</code>
+</p>
+
+<p class="lead">
+    <code>)</code>
+</p>
+</p>
+<p><code>inHandle</code>: The <a href="http://example.com/keyframe/typedkeyframes/#bezier-handles" title="`BezierHandle`">BezierHandle</a> used to control easing into the curve (to the right of or after the keyframe). If <code>inHandle</code> is <code>undefined</code>, the keyframe will use automatic handles.<br>
+<code>outHandle</code>: The <a href="http://example.com/keyframe/typedkeyframes/#bezier-handles" title="`BezierHandle`">BezierHandle</a> used to control easing out of the curve (to the left of or before the keyframe).<br>
+<code>defaultMagnitude</code>: The default magnitude of the keyframe&rsquo;s handles.</p>
+<p>The <code>BezierKeyframe</code> is an alternative implementation of <code>Keyframe&lt;number&gt;</code> that uses bezier handles to ease the curve rather than an <code>Easing</code> function from the <a href="https://npmjs.org/package/eaz">eaz</a> package.</p>
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-info rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-header border-0 bg-white pl-3 text-info">
+            <h3>Handle Restrictions</h3>
+        </div>
+        
+        <div class="card-body pt-1">
+            If one of the handles has too great a magnitude or an angle outside of a specific range, it could cause the curve to have multiple y values for one x value. In other words, it would fail the vertical line test and fail to be a function. In order to ensure that this is never the case to preserve the functionality of the curve, the handles are automatically restricted to this magnitude and range on <code>configure</code>.<br>
+If the handles are changed and <code>configure</code> is not called, keyframe could yield an unexpected result or throw an error.
+        </div>
+    </div>
+</div>
+
+<h3 id="bezier-handles">Bezier Handles</h3>
+<p><p class="lead">
+    <code>new</code> BezierHandle <code>(angle: number, magnitude = 1)</code>
+</p>
+
+Each <code>BezierHandle</code> contains an angle (in radians) and a magnitude.</p>
+<h5 id="to-cartesian">To Cartesian</h5>
+<p><p class="lead">
+    toCartesian <code>(origin: {x: number, y: number}): {x: number, y: number}</code>
+</p>
+
+Convert the bezier handle from polar coordinates to cartesian coordinates.</p>
+<h5 id="from-cartesian">From Cartesian</h5>
+<p><p class="lead">
+    fromCartesian <code>(origin: {x: number, y: number}, coordinates: {x: number, y: number}): void</code>
+</p>
+
+Set the angle and magnitude of the <code>BezierHandle</code> from its origin and cartesian coordinates.</p>
+<h3 id="automatic-handles">Automatic Handles</h3>
+<p><p class="lead">
+    <code>static</code> automatic <code>(time: number, value: number, magnitude = 1): BezierKeyframe</code>
+</p>
+
+The <code>BezierKeyframe</code> class contains a static method for easily creating bezier keyframes with automatically generated and configured handles. Automatic handles have their angles calculated to make the curve as smooth as possible.</p>
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-info rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-body pt-1">
+            The <code>automaticHandles</code> property of a <code>BezierKeyframe</code> dictates whether or not the keyframe&rsquo;s handles are automatically generated and configured. This property can be <code>read</code> or <code>written</code>.
+        </div>
+    </div>
+</div>
+
+
+
+    
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/keyframe/" title="Keyframe"><i class="fas fa-chevron-left p-1"></i>Keyframe</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/curvemodifier/" title="CurveModifier">CurveModifier<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="http://example.com/lib/jquery.min.js"></script> 
+<script src="http://example.com/lib/popper.min.js"></script> 
+
+<script src="http://example.com/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/plugins/auto-complete.js"></script>
+<link href="/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "http:\/\/example.com\/";
+  
+</script>
+<script type="text/javascript" src="/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>
