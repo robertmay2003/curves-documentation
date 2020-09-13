@@ -4,6 +4,7 @@
 /public/
 /resources/_gen/
 /.cache/
+/build/
 
 # Executable may be added to repository
 hugo.exe

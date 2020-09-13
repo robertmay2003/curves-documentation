@@ -6,7 +6,7 @@ weight: 4
 ---
 #
 
-this page describes the interfaces used
+The `RGBColor`, `HSVColor`, and `Vector3` interfaces are used throughout the [curves](https://npmjs.org/package/curves) module to work with colors and three-dimensional vector quantities.
 
 ### RGBColor
 
@@ -26,7 +26,7 @@ const color: RGBColor = {
 
 The `HSVColor` interface is used in `HSVColor` keyframes, curves, and modifiers. It refers to any object with an `h` value, a `s` value, and a `v` value, used to reference a color's HSV code.
 
-{{< panel title="Using HSL" style="info" >}} You can convert HSV values to HSL values and vice versa using the [ColorHelper]({{< ref "/color_helper" >}} "ColorHelper") {{< /panel >}}
+{{< panel style="info" >}} You can convert HSV values to HSL values and vice versa using the [ColorHelper]({{< ref "/color_helper" >}} "ColorHelper"). {{< /panel >}}
 
 {{< code lang="typescript" >}}
 import { HSVColor } from 'curves'; // Import
@@ -34,8 +34,8 @@ import { HSVColor } from 'curves'; // Import
 // Example
 const color: HSVColor = {
     h: 280,      // Between 0 - 360
-    s: 40,       // Between 0 - 360
-    v: 100,      // Between 0 - 360
+    s: 40,       // Between 0 - 100
+    v: 100,      // Between 0 - 100
 }
 {{< /code >}}
 

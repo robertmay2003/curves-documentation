@@ -6,4 +6,4 @@ weight: 100
 ---
 #
 
-Objects are cool :). special modifier
+Objects have their own special modifiers. Other modifiers cannot be applied to `object` curves, as they have unique implementations for each type.

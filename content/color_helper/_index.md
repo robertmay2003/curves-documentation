@@ -8,7 +8,7 @@ weight: 10
 
 The `ColorHelper` object contains functions to assist with color conversions between colors implementing the `RGBColor` interface and the `HSVColor` interface.
 
-{{< panel style="info" >}} See [Interfaces]({{< ref "/interfaces" >}} "Interfaces") for more information on the `RGBColor` and `HSVColor` interfaces {{< /panel >}}
+{{< panel style="info" >}} See [Interfaces]({{< ref "/interfaces" >}} "Interfaces") for more information on the `RGBColor` and `HSVColor` interfaces. {{< /panel >}}
 
 ---
 
