@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f129d3df-fdd1-4b91-a724-0b5e13e5f46e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gu537TKBkpQKDCliYN6WZYRn5U" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/color_helper" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/color_helper" />
+      <recent name="$PROJECT_DIR$/content/curve_modifier/object" />
+      <recent name="$PROJECT_DIR$/content/curve_modifier/string" />
+      <recent name="$PROJECT_DIR$/content/curve_modifier" />
+      <recent name="$PROJECT_DIR$/content/keyframe" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content" />
+      <recent name="$PROJECT_DIR$/static/js/content" />
+      <recent name="$PROJECT_DIR$/content/curve/react-test" />
+      <recent name="$PROJECT_DIR$/themes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Hugo.build">
+    <configuration name="build" type="HUGO_RUN_CONFIGURATION" factoryName="Hugo configuration factory">
+      <option name="hugo.plugin.arguments" value="-D" />
+      <option name="hugo.plugin.run.server" value="no" />
+      <option name="hugo.plugin.custom.project.dir" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="HUGO_RUN_CONFIGURATION" factoryName="Hugo configuration factory">
+      <option name="hugo.plugin.arguments" value="-D --bind=0.0.0.0" />
+      <option name="hugo.plugin.run.server" value="run" />
+      <option name="hugo.plugin.custom.project.dir" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Hugo.start" />
+      <item itemvalue="Hugo.build" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f129d3df-fdd1-4b91-a724-0b5e13e5f46e" name="Default Changelist" comment="" />
+      <created>1598951435119</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598951435119</updated>
+      <workItem from="1598951439580" duration="482000" />
+      <workItem from="1599080514048" duration="41019000" />
+      <workItem from="1599445536036" duration="24000" />
+      <workItem from="1599483187949" duration="6472000" />
+      <workItem from="1599568528829" duration="17063000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599568918173">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1599568918173" />
+    <state width="1419" height="240" key="GridCell.Tab.0.bottom" timestamp="1600034584419">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="240" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600034584419" />
+    <state width="1419" height="240" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1599568381076" />
+    <state width="1419" height="240" key="GridCell.Tab.0.center" timestamp="1600034584417">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="240" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600034584417" />
+    <state width="1419" height="240" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1599568381075" />
+    <state width="1419" height="240" key="GridCell.Tab.0.left" timestamp="1600034584415">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="240" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600034584415" />
+    <state width="1419" height="240" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1599568381074" />
+    <state width="1419" height="240" key="GridCell.Tab.0.right" timestamp="1600034584418">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="240" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600034584418" />
+    <state width="1419" height="240" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1599568381076" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1599189585422">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1599189585422" />
+    <state x="506" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599184331596">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="506" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1599184331596" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1599187408856">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1599187408856" />
+  </component>
+</project>
