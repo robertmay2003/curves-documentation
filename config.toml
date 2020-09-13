@@ -1,4 +1,4 @@
-baseURL = "https://robertzmay.com/curves-documentation/"
+baseURL = "http://robertzmay.com/curves-documentation/"
 languageCode = "en-us"
 title = "Curves Documentation"
 theme = "ace-documentation"
