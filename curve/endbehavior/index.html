@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="http://robertzmay.com/curves-documentation/curve/endbehavior/">
+
+    <title>
+        
+        End Behavior | Curves Documentation
+        
+    </title>
+
+    
+    <link href="http://robertzmay.com/curves-documentation/css/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="http://robertzmay.com/curves-documentation/css/ace.min.css">
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/curves-documentation">
+                Curves Documentation
+            </a>
+        </div>
+        
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarMainCollapse" aria-controls="navbarMainCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMainCollapse">
+              <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://curves.robertzmay.com/" >
+                                  Demos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.npmjs.com/package/curves" >
+                                  <i class='fab fa-npm'></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/robertmay2003/curves" >
+                                  <i class='fab fa-github'></i>
+                                </a>
+                            </li>
+              </ul>
+            </div>
+    </div>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/curves-documentation/curve/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/curve/"><h6>Curve</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curves-documentation/curve/builders/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curve/builders/" class="nav-link p-0">
+                    Builders
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curve/endbehavior/" class="nav-item my-1 active">
+                
+                 <a href="/curves-documentation/curve/endbehavior/" class="nav-link p-0">
+                    End Behavior
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/curves-documentation/keyframe/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/keyframe/"><h6>Keyframe</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curves-documentation/keyframe/typedkeyframes/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/keyframe/typedkeyframes/" class="nav-link p-0">
+                    Typed Keyframes
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/curves-documentation/curvemodifier/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/curvemodifier/"><h6>CurveModifier</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curves-documentation/curvemodifier/noise/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/noise/" class="nav-link p-0">
+                    Noise
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curvemodifier/clamp/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/clamp/" class="nav-link p-0">
+                    Clamp
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curvemodifier/sine/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/sine/" class="nav-link p-0">
+                    Sine
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curvemodifier/step/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/step/" class="nav-link p-0">
+                    Step
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curvemodifier/cycles/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/cycles/" class="nav-link p-0">
+                    Cycles
+                </a>
+        </li>
+    <li data-nav-id="/curves-documentation/curvemodifier/string/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/curvemodifier/string/"><h6>String Modifiers</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curves-documentation/curvemodifier/string/exclude/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/string/exclude/" class="nav-link p-0">
+                    Exclude
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curvemodifier/string/ranges/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/string/ranges/" class="nav-link p-0">
+                    Ranges
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/curves-documentation/curvemodifier/object/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/curvemodifier/object/"><h6>Object Modifiers</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curves-documentation/curvemodifier/object/aggregate/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/object/aggregate/" class="nav-link p-0">
+                    Aggregate
+                </a>
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/curves-documentation/interfaces/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/interfaces/"><h6>Interfaces</h6></a>
+    </li>
+    <li data-nav-id="/curves-documentation/color_helper/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/color_helper/"><h6>Color Helper</h6></a>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#clamp">Clamp</a></li>
+    <li><a href="#loop">Loop</a></li>
+    <li><a href="#pingpong">PingPong</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<h1>End Behavior</h1>
+
+<h1 id="heading"></h1>
+<p>The <code>EndBehavior</code> enum is used to define the behavior of a curve beyond its final keyframe. The value returned by <code>Curve.evaluate</code> when <code>time &gt; curve.endTime</code> or <code>time &lt; curve.startTime</code> is determined by the curve&rsquo;s <code>EndBehavior</code>.</p>
+<h2 id="clamp">Clamp</h2>
+<p>The <code>Clamp</code> behavior is the default <code>EndBehavior</code> value for a curve. A curve using the <code>Clamp</code> behavior will return the value of the first keyframe when <code>time &lt; curve.startTime</code> and the value of the last keyframe when <code>time &gt; curve.endTime</code>.</p>
+
+
+
+
+
+
+    
+    
+
+
+
+
+<div class="position-relative">
+    <div class="position-absolute" style="right:0;">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_566397ebf0">
+        Copy
+        </button>
+    </div>
+    <div id="clipboard_566397ebf0">
+    <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript">
+<span style="color:#069;font-weight:bold">import</span> { Curve, EndBehavior, NumberKeyframe } from <span style="color:#c30">&#39;curves&#39;</span>;
+
+<span style="color:#09f;font-style:italic">// Example
+</span><span style="color:#09f;font-style:italic"></span><span style="color:#069;font-weight:bold">const</span> curve <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">new</span> Curve&lt;<span style="color:#309;font-weight:bold">number</span>&gt;(
+    [
+        <span style="color:#069;font-weight:bold">new</span> NumberKeyframe(<span style="color:#f60">0</span>, <span style="color:#f60">0</span>), 
+        <span style="color:#069;font-weight:bold">new</span> NumberKeyframe(<span style="color:#f60">1</span>, <span style="color:#f60">1</span>)
+    ],                  <span style="color:#09f;font-style:italic">// Keyframes
+</span><span style="color:#09f;font-style:italic"></span>    [],                 <span style="color:#09f;font-style:italic">// Modifiers
+</span><span style="color:#09f;font-style:italic"></span>    EndBehavior.Clamp   <span style="color:#09f;font-style:italic">// EndBehavior
+</span><span style="color:#09f;font-style:italic"></span>);
+
+<span style="color:#09f;font-style:italic">// Expected output: 1
+</span><span style="color:#09f;font-style:italic"></span>curve.evaluate(<span style="color:#f60">3</span>)
+
+<span style="color:#09f;font-style:italic">// Expected output: 0
+</span><span style="color:#09f;font-style:italic"></span>curve.evaluate(<span style="color:#555">-</span><span style="color:#f60">2</span>)
+
+</code></pre></div>
+    </div>
+</div>
+
+
+
+
+<h2 id="loop">Loop</h2>
+<p>A curve using the <code>Loop</code> behavior will repeat after its end time and before its start time. It essentially evaluates the curve at <code>time = time % curve.duration</code> (The actual calculation is slightly more complex).</p>
+
+
+
+
+
+
+    
+    
+
+
+
+
+<div class="position-relative">
+    <div class="position-absolute" style="right:0;">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_14051cd859">
+        Copy
+        </button>
+    </div>
+    <div id="clipboard_14051cd859">
+    <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript">
+<span style="color:#069;font-weight:bold">import</span> { Curve, EndBehavior, NumberKeyframe } from <span style="color:#c30">&#39;curves&#39;</span>;
+
+<span style="color:#09f;font-style:italic">// Example
+</span><span style="color:#09f;font-style:italic"></span><span style="color:#069;font-weight:bold">const</span> curve <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">new</span> Curve&lt;<span style="color:#309;font-weight:bold">number</span>&gt;(
+    [
+        <span style="color:#069;font-weight:bold">new</span> NumberKeyframe(<span style="color:#f60">0</span>, <span style="color:#f60">0</span>), 
+        <span style="color:#069;font-weight:bold">new</span> NumberKeyframe(<span style="color:#f60">1</span>, <span style="color:#f60">1</span>)
+    ],                  <span style="color:#09f;font-style:italic">// Keyframes
+</span><span style="color:#09f;font-style:italic"></span>    [],                 <span style="color:#09f;font-style:italic">// Modifiers
+</span><span style="color:#09f;font-style:italic"></span>    EndBehavior.Loop   <span style="color:#09f;font-style:italic">// EndBehavior
+</span><span style="color:#09f;font-style:italic"></span>);
+
+<span style="color:#09f;font-style:italic">// Expected output: 0.5
+</span><span style="color:#09f;font-style:italic"></span>curve.evaluate(<span style="color:#f60">0.5</span>)
+
+<span style="color:#09f;font-style:italic">// Expected output: 0.5
+</span><span style="color:#09f;font-style:italic"></span>curve.evaluate(<span style="color:#f60">1.5</span>)
+
+<span style="color:#09f;font-style:italic">// Expected output: 0.5
+</span><span style="color:#09f;font-style:italic"></span>curve.evaluate(<span style="color:#555">-</span><span style="color:#f60">0.5</span>)
+
+</code></pre></div>
+    </div>
+</div>
+
+
+
+
+<h2 id="pingpong">PingPong</h2>
+<p>A curve using the <code>PingPong</code> behavior will repeat after its end time and before its start time with a reversed version of the curve, creating a smooth loop effect.</p>
+
+
+
+
+
+
+    
+    
+
+
+
+
+<div class="position-relative">
+    <div class="position-absolute" style="right:0;">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_c4bd0663c1">
+        Copy
+        </button>
+    </div>
+    <div id="clipboard_c4bd0663c1">
+    <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript">
+<span style="color:#069;font-weight:bold">import</span> { Curve, EndBehavior, NumberKeyframe } from <span style="color:#c30">&#39;curves&#39;</span>;
+
+<span style="color:#09f;font-style:italic">// Example
+</span><span style="color:#09f;font-style:italic"></span><span style="color:#069;font-weight:bold">const</span> curve <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">new</span> Curve&lt;<span style="color:#309;font-weight:bold">number</span>&gt;(
+    [
+        <span style="color:#069;font-weight:bold">new</span> NumberKeyframe(<span style="color:#f60">0</span>, <span style="color:#f60">0</span>), 
+        <span style="color:#069;font-weight:bold">new</span> NumberKeyframe(<span style="color:#f60">1</span>, <span style="color:#f60">1</span>)
+    ],                  <span style="color:#09f;font-style:italic">// Keyframes
+</span><span style="color:#09f;font-style:italic"></span>    [],                 <span style="color:#09f;font-style:italic">// Modifiers
+</span><span style="color:#09f;font-style:italic"></span>    EndBehavior.PingPong   <span style="color:#09f;font-style:italic">// EndBehavior
+</span><span style="color:#09f;font-style:italic"></span>);
+
+<span style="color:#09f;font-style:italic">// Expected output: 0.9375
+</span><span style="color:#09f;font-style:italic"></span>curve.evaluate(<span style="color:#f60">0.75</span>)
+
+<span style="color:#09f;font-style:italic">// Expected output: 1
+</span><span style="color:#09f;font-style:italic"></span>curve.evaluate(<span style="color:#f60">1</span>)
+
+<span style="color:#09f;font-style:italic">// Expected output: 0.9375
+</span><span style="color:#09f;font-style:italic"></span>curve.evaluate(<span style="color:#f60">1.25</span>)
+
+</code></pre></div>
+    </div>
+</div>
+
+
+
+
+
+
+    
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/curves-documentation/curve/builders/" title="Builders"><i class="fas fa-chevron-left p-1"></i>Builders</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/curves-documentation/keyframe/" title="Keyframe">Keyframe<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="http://robertzmay.com/curves-documentation/lib/jquery.min.js"></script> 
+<script src="http://robertzmay.com/curves-documentation/lib/popper.min.js"></script> 
+
+<script src="http://robertzmay.com/curves-documentation/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/curves-documentation/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/curves-documentation/plugins/auto-complete.js"></script>
+<link href="/curves-documentation/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "http:\/\/robertzmay.com\/curves-documentation\/";
+  
+</script>
+<script type="text/javascript" src="/curves-documentation/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="/curves-documentation/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

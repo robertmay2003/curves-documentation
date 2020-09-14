@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="http://robertzmay.com/curves-documentation/curvemodifier/clamp/">
+
+    <title>
+        
+        Clamp | Curves Documentation
+        
+    </title>
+
+    
+    <link href="http://robertzmay.com/curves-documentation/css/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="http://robertzmay.com/curves-documentation/css/ace.min.css">
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/curves-documentation">
+                Curves Documentation
+            </a>
+        </div>
+        
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarMainCollapse" aria-controls="navbarMainCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMainCollapse">
+              <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://curves.robertzmay.com/" >
+                                  Demos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.npmjs.com/package/curves" >
+                                  <i class='fab fa-npm'></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/robertmay2003/curves" >
+                                  <i class='fab fa-github'></i>
+                                </a>
+                            </li>
+              </ul>
+            </div>
+    </div>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/curves-documentation/curve/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/curve/"><h6>Curve</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curves-documentation/curve/builders/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curve/builders/" class="nav-link p-0">
+                    Builders
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curve/endbehavior/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curve/endbehavior/" class="nav-link p-0">
+                    End Behavior
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/curves-documentation/keyframe/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/keyframe/"><h6>Keyframe</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curves-documentation/keyframe/typedkeyframes/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/keyframe/typedkeyframes/" class="nav-link p-0">
+                    Typed Keyframes
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/curves-documentation/curvemodifier/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/curvemodifier/"><h6>CurveModifier</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curves-documentation/curvemodifier/noise/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/noise/" class="nav-link p-0">
+                    Noise
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curvemodifier/clamp/" class="nav-item my-1 active">
+                
+                 <a href="/curves-documentation/curvemodifier/clamp/" class="nav-link p-0">
+                    Clamp
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curvemodifier/sine/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/sine/" class="nav-link p-0">
+                    Sine
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curvemodifier/step/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/step/" class="nav-link p-0">
+                    Step
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curvemodifier/cycles/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/cycles/" class="nav-link p-0">
+                    Cycles
+                </a>
+        </li>
+    <li data-nav-id="/curves-documentation/curvemodifier/string/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/curvemodifier/string/"><h6>String Modifiers</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curves-documentation/curvemodifier/string/exclude/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/string/exclude/" class="nav-link p-0">
+                    Exclude
+                </a>
+        </li>
+        <li data-nav-id="/curves-documentation/curvemodifier/string/ranges/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/string/ranges/" class="nav-link p-0">
+                    Ranges
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/curves-documentation/curvemodifier/object/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/curvemodifier/object/"><h6>Object Modifiers</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/curves-documentation/curvemodifier/object/aggregate/" class="nav-item my-1">
+                
+                 <a href="/curves-documentation/curvemodifier/object/aggregate/" class="nav-link p-0">
+                    Aggregate
+                </a>
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/curves-documentation/interfaces/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/interfaces/"><h6>Interfaces</h6></a>
+    </li>
+    <li data-nav-id="/curves-documentation/color_helper/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/curves-documentation/color_helper/"><h6>Color Helper</h6></a>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#types">Types</a></li>
+        <li><a href="#constructor">Constructor</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<h1>Clamp</h1>
+
+<h1 id="heading"></h1>
+<p>The <code>Clamp</code> modifier clamps the evaluated value of the curve between a minimum and maximum value.</p>
+<h3 id="types">Types</h3>
+<ul>
+<li>Number</li>
+<li>List</li>
+<li>RGBColor</li>
+<li>HSVColor</li>
+<li>Vector3</li>
+</ul>
+<h3 id="constructor">Constructor</h3>
+<p><p class="lead">
+    <code>new</code> Clamp <code>(</code>
+</p>
+
+<p class="lead">
+    <code>   min:</code>[Type]<code>,</code>
+</p>
+
+<p class="lead">
+    <code>   max:</code>[Type]<code>,</code>
+</p>
+
+<p class="lead">
+    <code>    rangeStart: number | undefined = undefined,</code>
+</p>
+
+<p class="lead">
+    <code>    rangeEnd: number | undefined = undefined,</code>
+</p>
+
+<p class="lead">
+    <code>)</code>
+</p>
+</p>
+<p><code>min</code>: The minimum return value of the modifier.<br>
+<code>max</code>: The maximum return value of the modifier.<br>
+<code>rangeStart</code>: The time at which the modifier begins to modify the curve.<br>
+<code>rangeEnd</code>: The time at which the modifier no longer modifies the curve.\</p>
+<p>The <code>min</code> and <code>max</code> values should be the same type as the curve the modifier is being applied to, but for <code>RGBColor</code> and <code>Vector3</code> clamp modifiers, you can pass in a single number to be used for each property of the minimum and maximum values.</p>
+<p>For a <code>number[]</code> clamp modifier, use a <code>number</code> value for the <code>min</code> and <code>max</code> values. This value applies to every element in the list.</p>
+
+
+
+
+
+
+    
+    
+
+
+
+
+<div class="position-relative">
+    <div class="position-absolute" style="right:0;">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_77a73b18db">
+        Copy
+        </button>
+    </div>
+    <div id="clipboard_77a73b18db">
+    <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript">
+<span style="color:#069;font-weight:bold">import</span> { Modifiers } from <span style="color:#c30">&#39;curves&#39;</span>; <span style="color:#09f;font-style:italic">// Import Modifiers
+</span><span style="color:#09f;font-style:italic"></span>
+<span style="color:#069;font-weight:bold">const</span> numberClamp <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">new</span> Modifiers.<span style="color:#366">Number</span>.Clamp(<span style="color:#f60">0</span>, <span style="color:#f60">1</span>); <span style="color:#09f;font-style:italic">// Create a new number clamp modifier
+</span><span style="color:#09f;font-style:italic"></span><span style="color:#069;font-weight:bold">const</span> rgbClamp <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">new</span> Modifiers.RGB.Clamp(
+    {r: <span style="color:#078;font-weight:bold">0</span>, g: <span style="color:#078;font-weight:bold">0</span>, b: <span style="color:#078;font-weight:bold">100</span>},
+    {r: <span style="color:#078;font-weight:bold">100</span>, g: <span style="color:#078;font-weight:bold">255</span>, b: <span style="color:#078;font-weight:bold">255</span>}
+); <span style="color:#09f;font-style:italic">// Create a new color clamp modifier
+</span><span style="color:#09f;font-style:italic"></span>
+</code></pre></div>
+    </div>
+</div>
+
+
+
+
+
+
+    
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/curves-documentation/curvemodifier/noise/" title="Noise"><i class="fas fa-chevron-left p-1"></i>Noise</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/curves-documentation/curvemodifier/sine/" title="Sine">Sine<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="http://robertzmay.com/curves-documentation/lib/jquery.min.js"></script> 
+<script src="http://robertzmay.com/curves-documentation/lib/popper.min.js"></script> 
+
+<script src="http://robertzmay.com/curves-documentation/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/curves-documentation/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/curves-documentation/plugins/auto-complete.js"></script>
+<link href="/curves-documentation/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "http:\/\/robertzmay.com\/curves-documentation\/";
+  
+</script>
+<script type="text/javascript" src="/curves-documentation/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="/curves-documentation/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>
