@@ -4,6 +4,9 @@ title = "Curves Documentation"
 theme = "ace-documentation"
 publishdir = "build"
 
+disableSearch = false
+pygmentsStyle = "manni"
+
 [[menu.shortcuts]]
 name = "Demos"
 url = "http://curves.robertzmay.com/"
