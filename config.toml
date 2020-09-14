@@ -2,14 +2,13 @@ baseURL = "http://robertzmay.com/curves-documentation/"
 languageCode = "en-us"
 title = "Curves Documentation"
 theme = "ace-documentation"
-publishdir = "build"
-
-disableSearch = false
+pygmentsCodeFences = true
 pygmentsStyle = "manni"
+publishdir = "build"
 
 [[menu.shortcuts]]
 name = "Demos"
-url = "http://curves.robertzmay.com/"
+url = "http://robertzmay.com/curves-demo/"
 weight = 8
 
 [[menu.shortcuts]]
